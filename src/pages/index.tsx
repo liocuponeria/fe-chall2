@@ -19,6 +19,9 @@ export default function Homepage () {
       </ContainerTitle>
       <ContainerProduct>
           <BoxProduct />
+          <BoxProduct />
+          <BoxProduct />
+          <BoxProduct />
       
       </ContainerProduct>
       <Footer />
