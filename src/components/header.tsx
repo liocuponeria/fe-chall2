@@ -27,7 +27,7 @@ function Header() {
             </div>
             <div>
               <img src="images/roupas.svg" alt="logo" width="18" height="15" />
-              <Link href="/produtos/clothes">
+              <Link href="categoria">
                 <span>roupas</span>
               </Link>
             </div>
