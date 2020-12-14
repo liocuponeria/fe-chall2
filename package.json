@@ -8,9 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@types/react-select": "^3.0.28",
     "@types/styled-components": "^5.1.5",
     "@typescript-eslint/eslint-plugin": "^4.9.1",
     "@typescript-eslint/parser": "^4.9.1",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -19,6 +22,7 @@
     "polished": "^4.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-select": "^3.1.1",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {

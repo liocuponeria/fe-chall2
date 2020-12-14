@@ -37,7 +37,7 @@ export const Main = styled.div`
 
 export const Product = styled.div`
   margin: auto;
-  
+
   > img {
     border-radius: 14px;
   }

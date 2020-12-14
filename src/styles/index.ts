@@ -29,6 +29,7 @@ export const Main = styled.div`
   width: 100%;
   max-width: 1050px;
   display: flex;
+  justify-content: space-between;
   align-self: center;
 `;
 
@@ -118,10 +119,16 @@ export const ContainerTitle = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 768px) {
+    margin-top: 18px;
+  }
+
   span {
     @media screen and (max-width: 768px) {
-      text-align: center;
+      font-size: 18px;
+      justify-content: center;
       margin: auto;
+      display: flex;
     }
   }
 `;

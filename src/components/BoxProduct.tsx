@@ -1,15 +1,29 @@
 import React from 'react';
 import Link from 'next/link';
 
+interface Product {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  image: string;
+}
 
-export default function BoxProduct () {
-  
+interface Props {
+  product: Product;
+}
+
+export default function BoxProduct(props: Props) {
+  const { product } = props;
   return (
     <section className="produto">
-      <img src="/images/tenis.jpg" alt="logo" width="328" height="203" />
-      <h4>Sugestões para você</h4>
-      <p>R$ 39,90</p>
-      <Link href="detalhes">
+      <img src={product?.image} alt="logo" width="328" height="203" />
+      <h4>{product?.title}</h4>
+      <p>
+        R$
+        {product?.price}
+      </p>
+      <Link href={`/detalhes/${product?.id}`}>
         <button type="button">ver produto</button>
       </Link>
     </section>
