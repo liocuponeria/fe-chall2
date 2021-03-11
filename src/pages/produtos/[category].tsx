@@ -48,10 +48,8 @@ export default function Category(props: Props) {
 export const getServerSideProps: GetServerSideProps = async ({
   query: { category },
 }) => {
-  console.log(category)
   try {
     const res = await api.products.listByCategory(category as string);
-    console.log(res);
     return { props: { data: res?.data, error: null } };
   } catch (error) {
     return {

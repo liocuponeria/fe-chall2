@@ -46,12 +46,18 @@ export default function Homepage(props: Props) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  try {
-    const res = await api.products.list();
-    return { props: { data: res?.data || null, error: null }, revalidate: 1 };
-  } catch (error) {
+  const res = await api.products.list();
+  const data = await res.data;
+
+  if (!data) {
     return {
-      props: { data: null, error: error?.response?.data },
-    };
+      redirect: {
+        destination: '/',
+        permanent: false,
+      },
+    }
   }
+  
+  return { props: { data }, revalidate: 1 };
+
 };
