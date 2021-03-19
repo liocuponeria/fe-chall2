@@ -26,6 +26,7 @@ After you're done, push to the origin and send a pull request of the branch with
 - Use [Styled Components](https://styled-components.com/) to style your components.
 - You have to use Grid Layout for the structure of the pages and Flexbox for the Components.
 - All content needs to be consumed through the [Fake Store API](https://fakestoreapi.com/).
+- If the fake store API is out, you can consume [alternative API](https://gist.github.com/FranciscoBBC/7d1d5e370ba397f73c981dc27cd71c3d).
 - For the services, use [jamstack](https://jamstack.org/) architecture avaliable in next js to create your routes.
 - Home page must be a static page.
 - For the other pages, you have to use server side rendering avaliable in next js.
