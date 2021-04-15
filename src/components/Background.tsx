@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Header from './Header'
+import Footer from './Footer'
 
 interface IProps {
   showHeader?: boolean
@@ -8,11 +10,11 @@ interface IProps {
 const Background: React.FC<IProps> = ({ showHeader = true, showFooter = true, children }) => {
   return (
     <BackgroundContainer>
-      {showHeader ? null : null}
+      {showHeader ? <Header /> : null}
 
       <MainContainer>{children}</MainContainer>
 
-      {showFooter ? null : null}
+      {showFooter ? <Footer /> : null}
     </BackgroundContainer>
   )
 }
@@ -20,10 +22,10 @@ const Background: React.FC<IProps> = ({ showHeader = true, showFooter = true, ch
 export default Background
 
 const BackgroundContainer = styled.div`
-  display: flex;
-  background-color: red;
-  margin: 0;
-  padding: 0;
+  display: grid;
+  gap: 4px;
+  align-items: center;
+  justify-items: center;
 `
 
 const MainContainer = styled.div`

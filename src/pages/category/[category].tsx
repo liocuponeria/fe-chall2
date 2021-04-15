@@ -1,8 +1,6 @@
-// import Head from "next/head";
+import Background from '../../components/Background'
 
-import Background from '../components/Background'
-
-const Home: React.FC = () => {
+const Categories: React.FC = () => {
   return (
     <Background>
       <p>works</p>
@@ -52,4 +50,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default Categories
