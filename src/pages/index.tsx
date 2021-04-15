@@ -1,10 +1,12 @@
 // import Head from "next/head";
 
+import Background from '../components/Background'
+
 const Home: React.FC = () => {
   return (
-    <div>
+    <Background>
       <p>works</p>
-    </div>
+    </Background>
   )
 }
 
