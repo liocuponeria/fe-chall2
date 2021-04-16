@@ -27,8 +27,11 @@ interface IStyledProps {
 
 const ButtonNavBarContainer = styled.div<IStyledProps>`
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
 
   i {
+    font-size: 26px;
     color: ${({ isSelected, theme: { colors } }) =>
       isSelected ? colors.navbar.selected : colors.primary};
   }
@@ -46,5 +49,9 @@ const ButtonNavBarContainer = styled.div<IStyledProps>`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    span {
+      font-size: 12px;
+    }
   }
 `

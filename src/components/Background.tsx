@@ -12,7 +12,7 @@ const Background: React.FC<IProps> = ({ showHeader = true, showFooter = true, ch
     <BackgroundContainer>
       {showHeader ? <Header /> : null}
 
-      <MainContainer>{children}</MainContainer>
+      {children}
 
       {showFooter ? <Footer /> : null}
     </BackgroundContainer>
@@ -24,11 +24,7 @@ export default Background
 const BackgroundContainer = styled.div`
   display: grid;
   gap: 4px;
-  align-items: center;
-  justify-items: center;
-`
-
-const MainContainer = styled.div`
-  margin: 0;
-  padding: 0;
+  width: auto;
+  max-width: 1280px;
+  margin: 0 auto;
 `

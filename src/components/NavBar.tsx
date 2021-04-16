@@ -1,13 +1,7 @@
 import styled from 'styled-components'
 import ButtonNavBar from './ButtonNavBar'
 import { useRouter } from 'next/dist/client/router'
-
-const buttons = [
-  { label: 'início', icon: 'icon-inicio' },
-  { label: 'roupas', link: 'roupas', icon: 'icon-roupas' },
-  { label: 'eletrônicos', link: 'eletronicos', icon: 'icon-eletronicos' },
-  { label: 'acessórios', link: 'acessorios', icon: 'icon-acessorios' },
-]
+import { navBarButtons } from 'src/utils/navbar'
 
 const NavBar: React.FC = () => {
   const router = useRouter()
@@ -15,7 +9,7 @@ const NavBar: React.FC = () => {
   return (
     <NavBarContainer>
       <div>
-        {buttons.map((item) => (
+        {navBarButtons.map((item) => (
           <ButtonNavBar isSelected={item.link === category} key={item.label} {...item} />
         ))}
       </div>
@@ -27,15 +21,11 @@ export default NavBar
 
 const NavBarContainer = styled.div`
   width: 100%;
-  max-width: 1280px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 0;
-  overflow: hidden;
-  background: #ffffff;
-  box-shadow: 0px 3px 6px #00000029;
-  opacity: 1;
+  background-color: ${({ theme: { colors } }) => colors.background};
+  box-shadow: 0px 3px 6px ${({ theme: { colors } }) => colors.navbar.shadow};
   height: 60px;
 
   > div {
@@ -49,6 +39,10 @@ const NavBarContainer = styled.div`
   @media (max-width: 767px) {
     position: fixed;
     bottom: 0px;
-    box-shadow: ${({ theme }) => `0px -3px 6px ${theme.colors.navbar.shadow}`};
+    box-shadow: ${({ theme: { colors } }) => `0px -3px 6px ${colors.navbar.shadow}`};
+
+    > div {
+      padding: 0 30px 0 30px;
+    }
   }
 `
