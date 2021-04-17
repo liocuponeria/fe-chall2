@@ -20,15 +20,15 @@ const Products: React.FC<IProducts> = ({ products }) => {
 
   const sortedProducts = useMemo(() => {
     if (filter === lowPriceValue) {
-      return products.sort((a, b) => (a.price > b.price ? 1 : a.price < b.price ? -1 : 0))
+      return products?.sort((a, b) => (a.price > b.price ? 1 : a.price < b.price ? -1 : 0)) || []
     }
     if (filter === alphabetValue) {
-      return products.sort((a, b) => (a.title > b.title ? 1 : a.title < b.title ? -1 : 0))
+      return products?.sort((a, b) => (a.title > b.title ? 1 : a.title < b.title ? -1 : 0)) || []
     }
     if (filter === newerValue) {
-      return products.sort((a, b) => (a.id > b.id ? -1 : a.id < b.id ? 1 : 0))
+      return products?.sort((a, b) => (a.id > b.id ? -1 : a.id < b.id ? 1 : 0)) || []
     }
-    return products.sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0))
+    return products?.sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0)) || []
   }, [filter, products])
 
   return (

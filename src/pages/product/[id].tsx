@@ -1,7 +1,7 @@
 import { GetServerSideProps } from 'next'
 import Background from 'components/Background'
 import ProductDetails from 'components/ProductDetails'
-import { api } from '../../service/api'
+import { api } from 'service/api'
 import { productByIdEndPoint } from 'service/endpoints'
 
 interface IProduct {

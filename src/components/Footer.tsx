@@ -4,10 +4,10 @@ const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <div>
-        <img src="/imgs/facebook.svg" alt="facebook" />
-        <img src="/imgs/instagram.svg" alt="instagram" />
-        <img src="/imgs/twitter.svg" alt="twitter" />
-        <img src="/imgs/youtube.svg" alt="youtube" />
+        <i className="icon-facebook" />
+        <i className="icon-instagram" />
+        <i className="icon-twitter" />
+        <i className="icon-youtube" />
       </div>
     </FooterContainer>
   )
@@ -34,9 +34,9 @@ const FooterContainer = styled.footer`
       margin: 42px 0 98px 0;
     }
 
-    img {
-      height: 39px;
-      width: 39px;
+    i {
+      font-size: 39px;
+      color: ${({ theme: { colors } }) => colors.background};
     }
   }
 `

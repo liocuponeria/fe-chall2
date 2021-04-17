@@ -1,7 +1,8 @@
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from 'styled-components'
 import CategoryPage from 'pages/category/[category]'
-import { theme } from 'pages/_app'
+import { theme } from 'assets/theme'
+
 import { mockProducts } from '../../mock/products'
 
 jest.mock('next/dist/client/router', () => ({

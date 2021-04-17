@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from 'styled-components'
 import BackgroundComponent from 'components/Background'
-import { theme } from 'pages/_app'
+import { theme } from 'assets/theme'
 
 describe('Products component alphabet', () => {
   it('should match the snapshot', () => {

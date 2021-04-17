@@ -18,7 +18,7 @@ const ProductDetails: React.FC<IProduct> = ({ id, title, price, image, descripti
       </div>
       <div className="prodDetailsInfo">
         <span className="prodDetailsTitle">{title}</span>
-        <span className="prodDetailsPrice">R$ {price.toFixed(2)}</span>
+        <span className="prodDetailsPrice">R$ {price?.toFixed(2) || '0.00'}</span>
         <div>
           <span className="prodDetailsDescription">{description}</span>
         </div>
@@ -60,6 +60,7 @@ const ProductContainer = styled.div<IProductStyle>`
     max-width: 500px;
     height: 310px;
     width: 100%;
+    background-color: ${({ theme: { colors } }) => colors.background};
 
     img {
       max-width: 500px;

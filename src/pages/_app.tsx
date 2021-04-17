@@ -1,23 +1,9 @@
 import type { AppProps } from 'next/app'
 import AppProvider from 'hooks'
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import { colors } from '../assets/colors'
-import '../assets/fonts/css/fontello.css'
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased !important;
-    color: ${colors.primary};
-    font-family: Roboto;
-  }
-`
-
-export const theme = {
-  colors,
-}
+import { ThemeProvider } from 'styled-components'
+import 'assets/fonts/css/fontello.css'
+import { theme } from 'assets/theme'
+import { GlobalStyle } from '../assets/theme'
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (

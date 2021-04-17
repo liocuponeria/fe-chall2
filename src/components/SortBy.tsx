@@ -14,9 +14,11 @@ const SortBy: React.FC = () => {
 
   return (
     <SortByContainer>
-      <span>{titleToShow}</span>
+      <div className="TitleContainer">
+        <span>{titleToShow}</span>
+      </div>
 
-      <div>
+      <div className="SelectBoxContainer">
         <SelectBox />
       </div>
     </SortByContainer>
@@ -31,17 +33,19 @@ const SortByContainer = styled.div`
   border: 1px dashed white;
 
   padding: 30px 0 30px 0;
-  /* transition: 2s; */
+  transition: 2s;
   @media (max-width: 1279px) {
     padding: 30px;
   }
 
-  span {
-    font: 24px bold Roboto;
-    font-weight: 700;
+  .TitleContainer {
+    span {
+      font: 24px bold Roboto;
+      font-weight: 700;
+    }
   }
 
-  div {
+  .SelectBoxContainer {
     margin-left: auto;
     display: flex;
     align-content: center;
@@ -52,10 +56,17 @@ const SortByContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     padding: 18px;
-    span {
-      padding: 0;
+
+    .TitleContainer {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      span {
+        padding: 0;
+      }
     }
-    div {
+
+    .SelectBoxContainer {
       margin: 12px;
       padding-right: 0;
       padding: 0;

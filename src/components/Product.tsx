@@ -18,10 +18,10 @@ const Product: React.FC<IProduct> = ({ id, title, price, image }) => {
         <div className="prodImg" />
         <div className="prodInfoContainer">
           <span className="prodShortLabel">
-            {id} -{title.length > 65 ? `${title.substring(0, 65)}...` : title}
+            {title?.length > 65 ? `${title?.substring(0, 65)}...` : title}
           </span>
 
-          <span className="prodPrice">R$ {price.toFixed(2)}</span>
+          <span className="prodPrice">R$ {price?.toFixed(2) || '0.00'}</span>
 
           <BuyButton text="Ver Produto" />
         </div>
@@ -59,6 +59,8 @@ const ProductContainer = styled.div<IProductStyle>`
   .prodInfoContainer {
     border-radius: 0 0 14px 14px;
     border-left: 1px solid ${({ theme: { colors } }) => colors.products.border};
+    border-bottom: 1px solid ${({ theme: { colors } }) => colors.products.border};
+    border-right: 1px solid ${({ theme: { colors } }) => colors.products.border};
     height: 145px;
     width: 328px;
     display: flex;

@@ -1,4 +1,12 @@
-export const navBarButtons = [
+interface IButtons {
+  title?: string
+  label: string
+  icon?: string
+  link?: string
+  category?: string
+}
+
+export const navBarButtons: IButtons[] = [
   { title: 'Sugestões para você', label: 'início', icon: 'icon-inicio' },
   {
     title: 'Roupas',
@@ -23,4 +31,5 @@ export const navBarButtons = [
   },
 ]
 
-export const getCategory = (category: string) => navBarButtons.find(({ link }) => category === link)
+export const getCategory = (category: string): IButtons | undefined =>
+  navBarButtons.find(({ link }) => category === link)

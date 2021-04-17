@@ -5,7 +5,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
   className="Products__ProductsContainer-sc-1itopdo-0 cQRWsy"
 >
   <div
-    className="Product__ProductContainer-ih45b-0 fehIKr"
+    className="Product__ProductContainer-ih45b-0 jGnWRg"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -18,8 +18,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        19
-         -
         Opna Women's Short Sleeve Moisture
       </span>
       <span
@@ -36,7 +34,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 kwGNab"
+    className="Product__ProductContainer-ih45b-0 IwpDE"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -49,8 +47,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        18
-         -
         MBJ Women's Solid Short Sleeve Boat Neck V 
       </span>
       <span
@@ -67,7 +63,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 erthYN"
+    className="Product__ProductContainer-ih45b-0 dohCbi"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -80,8 +76,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        7
-         -
         White Gold Plated Princess
       </span>
       <span
@@ -98,7 +92,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 eLrcjb"
+    className="Product__ProductContainer-ih45b-0 jEuIko"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -111,8 +105,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        8
-         -
         Pierced Owl Rose Gold Plated Stainless Steel Double
       </span>
       <span
@@ -129,7 +121,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 kmyaJo"
+    className="Product__ProductContainer-ih45b-0 jFzYkH"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -142,8 +134,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        20
-         -
         DANVOUY Womens T Shirt Casual Cotton Short
       </span>
       <span
@@ -160,7 +150,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 kVSSpY"
+    className="Product__ProductContainer-ih45b-0 kmdYcv"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -173,8 +163,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        4
-         -
         Mens Cotton Jacket
       </span>
       <span
@@ -191,7 +179,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 ecYjmh"
+    className="Product__ProductContainer-ih45b-0 iczRBy"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -204,8 +192,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        2
-         -
         Mens Casual Premium Slim Fit T-Shirts 
       </span>
       <span
@@ -222,7 +208,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 gWEsFg"
+    className="Product__ProductContainer-ih45b-0 ipLHab"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -235,8 +221,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        16
-         -
         Lock and Love Women's Removable Hooded Faux Leather Moto Biker Ja...
       </span>
       <span
@@ -253,7 +237,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 dFmGDN"
+    className="Product__ProductContainer-ih45b-0 dYcLzK"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -266,8 +250,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        17
-         -
         Rain Jacket Women Windbreaker Striped Climbing Raincoats
       </span>
       <span
@@ -284,7 +266,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 kdEDnb"
+    className="Product__ProductContainer-ih45b-0 dAlTtk"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -297,8 +279,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        1
-         -
         Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
       </span>
       <span
@@ -315,7 +295,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 iGwcHC"
+    className="Product__ProductContainer-ih45b-0 lfaRth"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -328,8 +308,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        2
-         -
         Mens Cotton Jacket
       </span>
       <span
@@ -346,7 +324,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 cpGTCy"
+    className="Product__ProductContainer-ih45b-0 ioLRXx"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -359,8 +337,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        15
-         -
         BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats
       </span>
       <span
@@ -377,7 +353,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 dLJUWw"
+    className="Product__ProductContainer-ih45b-0 dlkOsT"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -390,8 +366,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        9
-         -
         WD 2TB Elements Portable External Hard Drive - USB 3.0 
       </span>
       <span
@@ -408,7 +382,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 kmqZRI"
+    className="Product__ProductContainer-ih45b-0 iRmchH"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -421,8 +395,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        10
-         -
         SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s
       </span>
       <span
@@ -439,7 +411,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 jQxxIf"
+    className="Product__ProductContainer-ih45b-0 lftYPQ"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -452,8 +424,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        11
-         -
         Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost S...
       </span>
       <span
@@ -470,7 +440,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 exyWoW"
+    className="Product__ProductContainer-ih45b-0 huyKpF"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -483,8 +453,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        12
-         -
         WD 4TB Gaming Drive Works with Playstation 4 Portable External Ha...
       </span>
       <span
@@ -501,7 +469,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 gzzBdt"
+    className="Product__ProductContainer-ih45b-0 bezwcu"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -514,8 +482,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        6
-         -
         Solid Gold Petite Micropave 
       </span>
       <span
@@ -532,7 +498,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 locoqw"
+    className="Product__ProductContainer-ih45b-0 iLUnCv"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -545,8 +511,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        13
-         -
         Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin
       </span>
       <span
@@ -563,7 +527,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 hCZHUs"
+    className="Product__ProductContainer-ih45b-0 dlSzSz"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -576,8 +540,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        5
-         -
         John Hardy Women's Legends Naga Gold & Silver Dragon Station Chai...
       </span>
       <span
@@ -594,7 +556,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="Product__ProductContainer-ih45b-0 dDGDKP"
+    className="Product__ProductContainer-ih45b-0 fYomlo"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
@@ -607,8 +569,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        14
-         -
         Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA...
       </span>
       <span

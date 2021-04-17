@@ -5,10 +5,6 @@ export const lowPriceValue = 'lowPrice'
 
 export const sortBy = [
   {
-    title: 'ordenar por',
-    value: 'empty',
-  },
-  {
     title: 'menor preço',
     value: lowPriceValue,
   },

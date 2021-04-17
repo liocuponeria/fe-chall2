@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from 'styled-components'
 import ButtonNavBarComponent from 'components/ButtonNavBar'
-import { theme } from 'pages/_app'
+import { theme } from 'assets/theme'
 
 describe('ButtonNavBar component', () => {
   it('should match the snapshot', () => {

@@ -72,7 +72,7 @@ exports[`Product page should match the snapshot 1`] = `
     className="childrenMargin"
   >
     <div
-      className="ProductDetails__ProductContainer-sc-15wgsak-0 kjAAna"
+      className="ProductDetails__ProductContainer-sc-15wgsak-0 iRTlRp"
     >
       <div
         className="prodDetailsImg"
@@ -118,24 +118,20 @@ exports[`Product page should match the snapshot 1`] = `
     </div>
   </div>
   <footer
-    className="Footer__FooterContainer-qgk6jt-0 ezRLAU"
+    className="Footer__FooterContainer-qgk6jt-0 gXkdUn"
   >
     <div>
-      <img
-        alt="facebook"
-        src="/imgs/facebook.svg"
+      <i
+        className="icon-facebook"
       />
-      <img
-        alt="instagram"
-        src="/imgs/instagram.svg"
+      <i
+        className="icon-instagram"
       />
-      <img
-        alt="twitter"
-        src="/imgs/twitter.svg"
+      <i
+        className="icon-twitter"
       />
-      <img
-        alt="youtube"
-        src="/imgs/youtube.svg"
+      <i
+        className="icon-youtube"
       />
     </div>
   </footer>

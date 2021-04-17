@@ -6,6 +6,8 @@ interface IProps {
   link?: string
   isSelected?: boolean
   label: string
+  title?: string
+  category?: string
 }
 
 const ButtonNavBar: React.FC<IProps> = ({ icon, label, isSelected = false, link }) => {

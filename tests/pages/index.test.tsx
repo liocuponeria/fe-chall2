@@ -1,7 +1,8 @@
 import renderer, { act } from 'react-test-renderer'
 import { ThemeProvider } from 'styled-components'
 import IndexPage, { getStaticProps } from 'pages/index'
-import { theme } from 'pages/_app'
+import { theme } from 'assets/theme'
+
 import { mockProducts } from '../mock/products'
 
 jest.mock('next/dist/client/router', () => ({
@@ -38,9 +39,8 @@ describe('Index page', () => {
     expect(tree.toJSON()).toMatchSnapshot()
 
     act(() => {
-      tree.root
-        .findByProps({ 'data-test-id': 'selectBox' })
-        .props.onChange({ currentTarget: 'alphabet' })
+      tree.root.findByProps({ 'data-test-id': 'selectBoxContainer' }).props.onClick()
+      tree.root.findByProps({ 'data-test-id': 'selectBoxOption0' }).props.onClick()
     })
   })
 

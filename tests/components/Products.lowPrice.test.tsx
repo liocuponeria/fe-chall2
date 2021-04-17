@@ -1,7 +1,8 @@
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from 'styled-components'
 import ProductsComponent from 'components/Products'
-import { theme } from 'pages/_app'
+import { theme } from 'assets/theme'
+
 import { mockProducts } from '../mock/products'
 
 jest.mock('hooks/filter', () => ({
