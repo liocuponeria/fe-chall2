@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Link from 'next/link'
+import BuyButton from './Button/BuyButton'
 
 interface IProduct {
   id: number
@@ -14,13 +15,15 @@ const Product: React.FC<IProduct> = ({ id, title, price, image }) => {
   return (
     <Link href={`/product/${id}`}>
       <ProductContainer image={image}>
-        <div />
-        <div>
-          <span>{title.length > 65 ? `${title.substring(0, 65)}...` : title}</span>
+        <div className="prodImg" />
+        <div className="prodInfoContainer">
+          <span className="prodShortLabel">
+            {id} -{title.length > 65 ? `${title.substring(0, 65)}...` : title}
+          </span>
 
-          <span>R$ {price.toFixed(2)}</span>
+          <span className="prodPrice">R$ {price.toFixed(2)}</span>
 
-          <a>Ver Produto</a>
+          <BuyButton text="Ver Produto" />
         </div>
       </ProductContainer>
     </Link>
@@ -43,7 +46,7 @@ const ProductContainer = styled.div<IProductStyle>`
   text-align: center;
   box-shadow: 0px 6px 12px #0000001f;
 
-  div:nth-child(1) {
+  .prodImg {
     border-radius: 14px 14px 0 0;
     height: 203px;
     width: 328px;
@@ -53,7 +56,7 @@ const ProductContainer = styled.div<IProductStyle>`
     background-repeat: no-repeat;
   }
 
-  div:nth-child(2) {
+  .prodInfoContainer {
     border-radius: 0 0 14px 14px;
     border-left: 1px solid ${({ theme: { colors } }) => colors.products.border};
     height: 145px;
@@ -63,34 +66,16 @@ const ProductContainer = styled.div<IProductStyle>`
     justify-content: center;
     align-items: center;
 
-    span:nth-child(1) {
+    .prodShortLabel {
       font-size: 16px;
       padding-left: 14px;
       padding-right: 14px;
       min-height: 40px;
     }
 
-    span:nth-child(2) {
+    .prodPrice {
       font-size: 22px;
       font-weight: 700;
-    }
-
-    a {
-      display: flex;
-      color: white;
-      justify-content: center;
-      align-items: center;
-      font-size: 16px;
-      width: 302px;
-      height: 36px;
-      background: ${({ theme: { colors } }) =>
-        `linear-gradient(90deg, ${colors.products.button.left} 0%, ${colors.products.button.right} 100%) 0% 0% no-repeat padding-box`};
-      box-shadow: 0px 3px 6px #00000029;
-      border-radius: 18px;
-    }
-
-    a:hover {
-      background: ${({ theme: { colors } }) => colors.products.button.rover};
     }
   }
 `

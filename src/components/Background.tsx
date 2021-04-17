@@ -12,7 +12,7 @@ const Background: React.FC<IProps> = ({ showHeader = true, showFooter = true, ch
     <BackgroundContainer>
       {showHeader ? <Header /> : null}
 
-      {children}
+      <div className="childrenMargin">{children}</div>
 
       {showFooter ? <Footer /> : null}
     </BackgroundContainer>
@@ -27,4 +27,14 @@ const BackgroundContainer = styled.div`
   width: auto;
   max-width: 1280px;
   margin: 0 auto;
+
+  .childrenMargin {
+    display: grid;
+    justify-content: center;
+    margin: 0 132px 0 132px;
+    transition: 2s;
+    @media (max-width: 1279px) {
+      margin: 0;
+    }
+  }
 `

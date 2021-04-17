@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import AppProvider from 'src/hooks'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { colors } from '../assets/colors'
 import '../assets/fonts/css/fontello.css'
@@ -19,12 +20,12 @@ const theme = {
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <>
+    <AppProvider>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
       </ThemeProvider>
-    </>
+    </AppProvider>
   )
 }
 

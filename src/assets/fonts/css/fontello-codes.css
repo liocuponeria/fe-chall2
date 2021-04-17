@@ -1,8 +1,11 @@
 
 .icon-roupas:before { content: '\e800'; } /* '' */
+.icon-resize-full:before { content: '\e801'; } /* '' */
 .icon-facebook:before { content: '\e802'; } /* '' */
+.icon-down-open:before { content: '\e803'; } /* '' */
 .icon-instagram:before { content: '\e804'; } /* '' */
 .icon-logo:before { content: '\e805'; } /* '' */
+.icon-left-open:before { content: '\e806'; } /* '' */
 .icon-twitter:before { content: '\e807'; } /* '' */
 .icon-youtube:before { content: '\e808'; } /* '' */
 .icon-headphones:before { content: '\e809'; } /* '' */

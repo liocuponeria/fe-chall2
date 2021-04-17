@@ -1,18 +1,23 @@
+export const emptyValue = 'empty'
+export const newerValue = 'newer'
+export const alphabetValue = 'alphabet'
+export const lowPriceValue = 'lowPrice'
+
 export const sortBy = [
   {
     title: 'ordenar por',
-    value: undefined,
+    value: 'empty',
   },
   {
     title: 'menor preço',
-    value: 'lowPrice',
+    value: lowPriceValue,
   },
   {
     title: 'a - z',
-    value: 'alphabet',
+    value: alphabetValue,
   },
   {
     title: 'mais recentes',
-    value: 'newer',
+    value: newerValue,
   },
 ]

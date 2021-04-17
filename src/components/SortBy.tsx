@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { useRouter } from 'next/dist/client/router'
 import { useMemo } from 'react'
 import { navBarButtons } from 'src/utils/navbar'
-import { sortBy } from 'src/utils/sort'
+import SelectBox from './SelectBox/SelectBox'
 
 const SortBy: React.FC = () => {
   const router = useRouter()
@@ -17,13 +17,7 @@ const SortBy: React.FC = () => {
       <span>{titleToShow}</span>
 
       <div>
-        <select>
-          {sortBy.map(({ title, value }) => (
-            <option key={title} value={value}>
-              {title}
-            </option>
-          ))}
-        </select>
+        <SelectBox />
       </div>
     </SortByContainer>
   )
@@ -33,10 +27,14 @@ export default SortBy
 
 const SortByContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 132px 30px 132px;
   flex-direction: row;
+  border: 1px dashed white;
+
+  padding: 30px 0 30px 0;
+  /* transition: 2s; */
+  @media (max-width: 1279px) {
+    padding: 30px;
+  }
 
   span {
     font: 24px bold Roboto;
@@ -44,7 +42,6 @@ const SortByContainer = styled.div`
   }
 
   div {
-    background-color: red;
     margin-left: auto;
     display: flex;
     align-content: center;

@@ -33,16 +33,16 @@ const NavBarContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 0 132px 0 132px;
+    margin: 0 132px 0 132px;
+    transition: 2s;
+    @media (max-width: 1279px) {
+      margin: 0 30px 0 30px;
+    }
   }
 
   @media (max-width: 767px) {
     position: fixed;
     bottom: 0px;
     box-shadow: ${({ theme: { colors } }) => `0px -3px 6px ${colors.navbar.shadow}`};
-
-    > div {
-      padding: 0 30px 0 30px;
-    }
   }
 `

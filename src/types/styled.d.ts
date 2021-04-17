@@ -13,12 +13,19 @@ declare module 'styled-components' {
         selected: string
         shadow: string
       }
+      sortBy: {
+        border: string
+        divider: string
+      }
       products: {
         border: string
         button: {
           left: string
           right: string
           rover: string
+        }
+        details: {
+          price: string
         }
       }
       footer: {

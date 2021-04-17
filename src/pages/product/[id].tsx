@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { GetServerSideProps } from 'next'
 import Background from 'src/components/Background'
+import ProductDetails from 'src/components/ProductDetails'
 
 interface IProduct {
   id: number
@@ -11,8 +12,12 @@ interface IProduct {
   image: string
 }
 
-const Categories: React.FC<IProduct> = ({ title }) => {
-  return <Background>{JSON.stringify(title)}</Background>
+const Categories: React.FC<IProduct> = (product) => {
+  return (
+    <Background>
+      <ProductDetails {...product} />
+    </Background>
+  )
 }
 
 export default Categories
