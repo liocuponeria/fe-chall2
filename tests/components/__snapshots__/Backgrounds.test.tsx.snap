@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Products component alphabet should match the snapshot 1`] = `
+<div
+  className="Background__BackgroundContainer-sc-1ig5col-0 caskQE"
+>
+  <div
+    className="childrenMargin"
+  />
+</div>
+`;

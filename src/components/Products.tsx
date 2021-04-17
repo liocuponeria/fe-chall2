@@ -33,8 +33,8 @@ const Products: React.FC<IProducts> = ({ products }) => {
 
   return (
     <ProductsContainer>
-      {sortedProducts?.map((product) => (
-        <Product {...product} key={product.id} />
+      {sortedProducts?.map((product, index) => (
+        <Product {...product} key={`${index}-${product.id}`} />
       ))}
     </ProductsContainer>
   )

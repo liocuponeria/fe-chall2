@@ -175,7 +175,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       >
         4
          -
-        Mens Casual Slim Fit
+        Mens Cotton Jacket
       </span>
       <span
         className="prodPrice"
@@ -284,6 +284,37 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
     </div>
   </div>
   <div
+    className="Product__ProductContainer-ih45b-0 kdEDnb"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <div
+      className="prodImg"
+    />
+    <div
+      className="prodInfoContainer"
+    >
+      <span
+        className="prodShortLabel"
+      >
+        1
+         -
+        Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+      </span>
+      <span
+        className="prodPrice"
+      >
+        R$ 
+        55.99
+      </span>
+      <a
+        className="BuyButton__BuyButtonContainer-sc-1fz6kqp-0 XtTgO"
+      >
+        Ver Produto
+      </a>
+    </div>
+  </div>
+  <div
     className="Product__ProductContainer-ih45b-0 iGwcHC"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -297,7 +328,7 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       <span
         className="prodShortLabel"
       >
-        3
+        2
          -
         Mens Cotton Jacket
       </span>
@@ -430,37 +461,6 @@ exports[`Products component lowPrice should match the snapshot 1`] = `
       >
         R$ 
         109.00
-      </span>
-      <a
-        className="BuyButton__BuyButtonContainer-sc-1fz6kqp-0 XtTgO"
-      >
-        Ver Produto
-      </a>
-    </div>
-  </div>
-  <div
-    className="Product__ProductContainer-ih45b-0 kdEDnb"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-  >
-    <div
-      className="prodImg"
-    />
-    <div
-      className="prodInfoContainer"
-    >
-      <span
-        className="prodShortLabel"
-      >
-        1
-         -
-        Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
-      </span>
-      <span
-        className="prodPrice"
-      >
-        R$ 
-        109.95
       </span>
       <a
         className="BuyButton__BuyButtonContainer-sc-1fz6kqp-0 XtTgO"

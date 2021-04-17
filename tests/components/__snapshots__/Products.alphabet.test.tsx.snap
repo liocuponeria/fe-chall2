@@ -119,7 +119,7 @@ exports[`Products component alphabet should match the snapshot 1`] = `
         className="prodPrice"
       >
         R$ 
-        109.95
+        55.99
       </span>
       <a
         className="BuyButton__BuyButtonContainer-sc-1fz6kqp-0 XtTgO"
@@ -253,6 +253,37 @@ exports[`Products component alphabet should match the snapshot 1`] = `
     </div>
   </div>
   <div
+    className="Product__ProductContainer-ih45b-0 iGwcHC"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <div
+      className="prodImg"
+    />
+    <div
+      className="prodInfoContainer"
+    >
+      <span
+        className="prodShortLabel"
+      >
+        2
+         -
+        Mens Cotton Jacket
+      </span>
+      <span
+        className="prodPrice"
+      >
+        R$ 
+        55.99
+      </span>
+      <a
+        className="BuyButton__BuyButtonContainer-sc-1fz6kqp-0 XtTgO"
+      >
+        Ver Produto
+      </a>
+    </div>
+  </div>
+  <div
     className="Product__ProductContainer-ih45b-0 kVSSpY"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -268,44 +299,13 @@ exports[`Products component alphabet should match the snapshot 1`] = `
       >
         4
          -
-        Mens Casual Slim Fit
-      </span>
-      <span
-        className="prodPrice"
-      >
-        R$ 
-        15.99
-      </span>
-      <a
-        className="BuyButton__BuyButtonContainer-sc-1fz6kqp-0 XtTgO"
-      >
-        Ver Produto
-      </a>
-    </div>
-  </div>
-  <div
-    className="Product__ProductContainer-ih45b-0 iGwcHC"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-  >
-    <div
-      className="prodImg"
-    />
-    <div
-      className="prodInfoContainer"
-    >
-      <span
-        className="prodShortLabel"
-      >
-        3
-         -
         Mens Cotton Jacket
       </span>
       <span
         className="prodPrice"
       >
         R$ 
-        55.99
+        15.99
       </span>
       <a
         className="BuyButton__BuyButtonContainer-sc-1fz6kqp-0 XtTgO"

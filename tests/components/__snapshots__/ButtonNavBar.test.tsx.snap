@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonNavBar component should match the snapshot 1`] = `
+<div
+  className="ButtonNavBar__ButtonNavBarContainer-sc-109tumo-0 eVfgCa"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+>
+  <span>
+    label
+  </span>
+</div>
+`;

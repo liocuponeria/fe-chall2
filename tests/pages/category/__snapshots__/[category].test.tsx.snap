@@ -132,7 +132,7 @@ exports[`Category page should match the snapshot 1`] = `
             className="prodPrice"
           >
             R$ 
-            109.95
+            55.99
           </span>
           <a
             className="BuyButton__BuyButtonContainer-sc-1fz6kqp-0 XtTgO"
@@ -186,7 +186,7 @@ exports[`Category page should match the snapshot 1`] = `
           <span
             className="prodShortLabel"
           >
-            3
+            2
              -
             Mens Cotton Jacket
           </span>
@@ -219,7 +219,7 @@ exports[`Category page should match the snapshot 1`] = `
           >
             4
              -
-            Mens Casual Slim Fit
+            Mens Cotton Jacket
           </span>
           <span
             className="prodPrice"

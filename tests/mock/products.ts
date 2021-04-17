@@ -11,14 +11,14 @@ export const mockProducts = [
   {
     id: 1,
     title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops',
-    price: 109.95,
+    price: 55.99,
     description:
       'Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday',
     category: 'men clothing',
     image: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
   },
   {
-    id: 3,
+    id: 2,
     title: 'Mens Cotton Jacket',
     price: 55.99,
     description:
@@ -28,7 +28,7 @@ export const mockProducts = [
   },
   {
     id: 4,
-    title: 'Mens Casual Slim Fit',
+    title: 'Mens Cotton Jacket',
     price: 15.99,
     description:
       'The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.',
