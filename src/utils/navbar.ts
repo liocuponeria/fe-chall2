@@ -3,22 +3,24 @@ export const navBarButtons = [
   {
     title: 'Roupas',
     label: 'roupas',
-    link: 'roupas',
+    link: 'clothing',
     icon: 'icon-roupas',
     category: 'men clothing',
   },
   {
     title: 'Eletrônicos',
     label: 'eletrônicos',
-    link: 'eletronicos',
+    link: 'electronics',
     icon: 'icon-eletronicos',
     category: 'electronics',
   },
   {
     title: 'Acessórios',
     label: 'acessórios',
-    link: 'acessorios',
+    link: 'jewelery',
     icon: 'icon-acessorios',
     category: 'jewelery',
   },
 ]
+
+export const getCategory = (category: string) => navBarButtons.find(({ link }) => category === link)

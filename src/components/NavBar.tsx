@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import ButtonNavBar from './ButtonNavBar'
 import { useRouter } from 'next/dist/client/router'
-import { navBarButtons } from 'src/utils/navbar'
+import { navBarButtons } from 'utils/navbar'
 
 const NavBar: React.FC = () => {
   const router = useRouter()
-  const { category } = router.query
+  const category = router?.query?.category
+
   return (
     <NavBarContainer>
       <div>

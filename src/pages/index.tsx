@@ -1,8 +1,9 @@
-import Products from 'src/components/Products'
-import SortBy from 'src/components/SortBy'
-import Background from '../components/Background'
+import Products from 'components/Products'
+import SortBy from 'components/SortBy'
+import Background from 'components/Background'
 import { GetStaticProps } from 'next'
-import axios from 'axios'
+import { api } from 'service/api'
+import { productsEndPoint } from 'service/endpoints'
 
 interface IProduct {
   products: {
@@ -28,8 +29,7 @@ export default Home
 
 export const getStaticProps: GetStaticProps = async () => {
   try {
-    const { data } = await axios.get('https://fakestoreapi.com/products')
-    console.log(data)
+    const { data } = await api.get(productsEndPoint)
     return {
       props: {
         products: data,

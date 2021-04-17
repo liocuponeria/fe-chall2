@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import AppProvider from 'src/hooks'
+import AppProvider from 'hooks'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { colors } from '../assets/colors'
 import '../assets/fonts/css/fontello.css'
@@ -10,11 +10,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased !important;
-    color: ${colors.primary}
+    color: ${colors.primary};
+    font-family: Roboto;
   }
 `
 
-const theme = {
+export const theme = {
   colors,
 }
 

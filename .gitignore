@@ -33,8 +33,5 @@ yarn-error.log*
 # vercel
 .vercel
 
-# Jest
-**/__snapshots__
-
 # Lock
 yarn.lock

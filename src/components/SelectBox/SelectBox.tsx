@@ -1,12 +1,13 @@
 import styled from 'styled-components'
-import { sortBy } from 'src/utils/sort'
-import { useFilter } from 'src/hooks/filter'
+import { sortBy } from 'utils/sort'
+import { useFilter } from 'hooks/filter'
 
 const SelectBox: React.FC = () => {
   const { filter, setFilter } = useFilter()
 
   return (
     <SelectBoxContainer
+      data-test-id="selectBox"
       value={filter}
       placeholder="placeholder"
       onChange={({ currentTarget: { value } }) => {

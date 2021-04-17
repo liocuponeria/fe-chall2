@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 import { useRouter } from 'next/dist/client/router'
 import { useMemo } from 'react'
-import { navBarButtons } from 'src/utils/navbar'
+import { navBarButtons } from 'utils/navbar'
 import SelectBox from './SelectBox/SelectBox'
 
 const SortBy: React.FC = () => {
   const router = useRouter()
-  const { category } = router.query
+  const category = router?.query?.category
 
   const titleToShow = useMemo(() => {
     return navBarButtons.find(({ link }) => link === category)?.title

@@ -76,6 +76,9 @@ const ProductContainer = styled.div<IProductStyle>`
     .prodPrice {
       font-size: 22px;
       font-weight: 700;
+      @media (max-width: 767px) {
+        margin-bottom: 18px;
+      }
     }
   }
 `

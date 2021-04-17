@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react'
-import { emptyValue } from 'src/utils/sort'
+import { emptyValue } from 'utils/sort'
 
 interface FiltersContextData {
   filter: string

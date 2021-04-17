@@ -22,7 +22,9 @@ const ProductDetails: React.FC<IProduct> = ({ id, title, price, image, descripti
         <div>
           <span className="prodDetailsDescription">{description}</span>
         </div>
-        <BuyButton text="comprar" href={`/product/${id}`} />
+        <div className="prodDetailsButtonContainer">
+          <BuyButton text="comprar" href={`/product/${id}`} />
+        </div>
       </div>
     </ProductContainer>
   )
@@ -74,12 +76,17 @@ const ProductContainer = styled.div<IProductStyle>`
     flex-direction: column;
 
     @media (max-width: 767px) {
-      margin: 0;
+      margin: 24px 16px 0 16px;
     }
 
     > div {
       padding-top: 20px;
       flex: 1;
+
+      @media (max-width: 767px) {
+        flex: 0;
+        margin-bottom: 12px;
+      }
     }
 
     .prodDetailsTitle {
@@ -88,10 +95,22 @@ const ProductContainer = styled.div<IProductStyle>`
       color: ${({ theme: { colors } }) => colors.primary};
     }
 
+    .prodDetailsButtonContainer {
+      @media (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
     .prodDetailsPrice {
       color: ${({ theme: { colors } }) => colors.products.details.price};
       font-size: 30px;
       font-weight: 700;
+      font-family: Roboto;
+      @media (max-width: 767px) {
+        margin: 6px 0 0 0;
+      }
     }
 
     .prodDetailsDescription {

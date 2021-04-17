@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import Product from './Product'
 import { useMemo } from 'react'
-import { useFilter } from 'src/hooks/filter'
-import { alphabetValue, lowPriceValue, newerValue } from 'src/utils/sort'
+import { useFilter } from 'hooks/filter'
+import { alphabetValue, lowPriceValue, newerValue } from 'utils/sort'
 
 interface IProducts {
   products: {
@@ -15,7 +15,7 @@ interface IProducts {
   }[]
 }
 
-const Products: React.FC<IProducts> = ({ products = [] }) => {
+const Products: React.FC<IProducts> = ({ products }) => {
   const { filter } = useFilter()
 
   const sortedProducts = useMemo(() => {

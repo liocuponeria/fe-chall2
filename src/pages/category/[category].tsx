@@ -1,9 +1,10 @@
-import axios from 'axios'
 import { GetServerSideProps } from 'next'
-import Background from 'src/components/Background'
-import Products from 'src/components/Products'
-import SortBy from 'src/components/SortBy'
-import { navBarButtons } from '../../utils/navbar'
+import Background from 'components/Background'
+import Products from 'components/Products'
+import SortBy from 'components/SortBy'
+import { api } from 'service/api'
+import { productsInCategoryEndPoint } from 'service/endpoints'
+import { getCategory } from 'utils/navbar'
 
 interface IProducts {
   products: {
@@ -27,12 +28,19 @@ const Categories: React.FC<IProducts> = ({ products }) => {
 
 export default Categories
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { category } = navBarButtons.find(({ link }) => context.params.category === link)
+interface IGetServerSideProps {
+  params: { category: string }
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const getServerSideProps: GetServerSideProps | any = async (
+  context: IGetServerSideProps
+) => {
+  const { category } = getCategory(context.params.category)
 
   try {
-    const { data } = await axios.get(`https://fakestoreapi.com/products/category/${category}`)
-    console.log(data)
+    const { data } = await api.get(productsInCategoryEndPoint(category))
+
     return {
       props: {
         products: data,

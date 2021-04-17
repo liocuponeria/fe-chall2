@@ -1,7 +1,8 @@
-import axios from 'axios'
 import { GetServerSideProps } from 'next'
-import Background from 'src/components/Background'
-import ProductDetails from 'src/components/ProductDetails'
+import Background from 'components/Background'
+import ProductDetails from 'components/ProductDetails'
+import { api } from '../../service/api'
+import { productByIdEndPoint } from 'service/endpoints'
 
 interface IProduct {
   id: number
@@ -21,11 +22,17 @@ const Categories: React.FC<IProduct> = (product) => {
 }
 
 export default Categories
+interface IGetServerSideProps {
+  params: { id: string }
+}
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const getServerSideProps: GetServerSideProps | any = async (
+  context: IGetServerSideProps
+) => {
   try {
-    const { data } = await axios.get(`https://fakestoreapi.com/products/${context.params.id}`)
-    console.log(data)
+    const { data } = await api.get(productByIdEndPoint(context.params.id))
+
     return {
       props: data,
     }

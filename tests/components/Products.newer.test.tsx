@@ -1,0 +1,24 @@
+import renderer from 'react-test-renderer'
+import { ThemeProvider } from 'styled-components'
+import ProductsComponent from 'components/Products'
+import { theme } from 'pages/_app'
+import { mockProducts } from '../mock/products'
+
+jest.mock('hooks/filter', () => ({
+  useFilter: jest.fn().mockImplementation(() => ({
+    filter: 'newer',
+  })),
+}))
+
+describe('Products component newer', () => {
+  it('should match the snapshot', () => {
+    const tree = renderer
+      .create(
+        <ThemeProvider theme={theme}>
+          <ProductsComponent products={mockProducts} />
+        </ThemeProvider>
+      )
+      .toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+})
