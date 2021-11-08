@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/link-passhref */
 import styled from 'styled-components'
 import Link from 'next/link'
+import { useState } from 'react'
 
 const AddressWrapper = styled.div`
         flex: 0 1 auto;
@@ -41,16 +42,31 @@ const StyleLink = styled.p`
     text-decoration: underline;
 `;
 
-
-
-export default function AddressForm(props) {    
+export default function AddressForm( address ) { 
+    const [value, setValue] = useState(''); 
+    async function handleCep(value) {
+        // Fetch data from external API
+        if (value.length === 8) {
+            const res = await fetch(`https://viacep.com.br/ws/${value}/json/`)
+            const address = await res.json()
+            return address
+            }
+        }
+        // Pass data to the page via props
+      
     return (
         <AddressWrapper>
                 <form>
-                    <InputLogin type="text" placeholder="cep" name="cep" /><br/><br/>
-                    <InputLogin type="text" placeholder="rua" name="rua" value={props.logradouro}/><br/><br/>
-                    <InputLogin type="text" placeholder="cidade" name="cidade" value={props.localidade}/><br/><br/>
-                    <InputLogin type="text" placeholder="país" name="país" value="Brasil"/><br/>
+                    <InputLogin 
+                        type="text" 
+                        placeholder="cep" 
+                        name="cep" 
+                        onChange={e => { setValue(e.currentTarget.value); }}
+                        oninput={handleCep(value)}
+                    /><br/><br/>
+                    <InputLogin type="text" placeholder="rua" name="rua" value={address['logradouro']}/><br/><br/>
+                    <InputLogin type="text" placeholder="cidade" name="cidade" value={address.localidade}/><br/><br/>
+                    <InputLogin type="text" placeholder="país" name="país" defaultValue="Brasil"/><br/>
                 </form>
                 <Link href="/cart">
                     <Button>

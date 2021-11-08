@@ -17,25 +17,15 @@ const AddressContainer = styled.div`
     `;
 
 
-function Address({ address }) {
+function Address() {
     return (
         <div>
             <Greeting>Criar Conta</Greeting>
             <AddressContainer>
-                    <AddressForm {...address}/>
+                    <AddressForm />
             </AddressContainer>
         </div>
     )
-  }
-
-  export async function getServerSideProps() {
-    // Fetch data from external API
-    const res = await fetch('https://viacep.com.br/ws/22420043/json/')
-    const address = await res.json()
-    console.log(address)
-  
-    // Pass data to the page via props
-    return { props: { address } }
   }
   
   export default Address
